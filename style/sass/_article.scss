@@ -1,0 +1,59 @@
+.article {
+  margin-bottom: $itemSpace*3;
+  .container {
+    h2 {
+      width: 95%;
+      margin: 0px auto;
+      margin-bottom: $itemSpace*2;
+    }
+
+    .containerArticle {
+      width: 95%;
+      margin: 0px auto;
+      margin-bottom: $itemSpace;
+      box-shadow: 0 4px 2px -1px $grey-3;
+      border: 1px solid $grey-3;
+      border-radius: 4%;
+      .image {
+        width: 100%;
+        height: 230px;
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        background-color: $grey;
+      } // end image
+      .info {
+        width: calc(100% - 30px);
+        margin: 0px auto;
+        h3 {
+          margin: $itemSpace 0;
+        }
+        p {
+          line-height: 20px;
+          margin-bottom: $itemSpace*3;
+        }
+      }
+    } // end .containerArticle
+  } // end .container
+} // end article
+
+@media all and (min-width: $lg) {
+  .article {
+    position: relative;
+    bottom: 80px;
+    .container {
+      h2 {
+        width: auto;
+        text-align: left;
+      }
+      .containerArticle {
+        display: inline-block;
+        width: 21%;
+        margin-right: $itemSpace*2;
+      } // end .containerArticle
+      .moveBottom {
+        position: relative;
+        top: $itemSpace*2;
+      } // end moveBottom
+    } // end .container
+  } // end .article
+} // end media query

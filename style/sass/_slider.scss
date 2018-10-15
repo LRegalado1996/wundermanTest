@@ -1,0 +1,73 @@
+.regular {
+  position: relative;
+  bottom: 2px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $itemSpace*3;
+  .photo {
+    display: block;
+    width: 100%;
+    min-height: 330px;
+    background-image: url('../../img/coverPhone.png');
+    background-size: cover;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  } // end .photo
+} // end .regular
+
+.slick-next, .slick-prev {
+    display: none !important;
+}
+
+@media all and (min-width: $lg) {
+  .regular {
+    .photo {
+      min-height: 500px;
+      background-image: url('../../img/coverDesktop.png');
+    } //end .photo
+  } // end .regular
+
+  .slick-next, .slick-prev {
+      width: auto;
+      height: auto;
+      display: inline-block !important;
+      z-index: 10;
+      top: 40%;
+      background-color: $white;
+      padding: $itemSpace $itemSpace*2;
+      border-radius: 100%;
+      transition: 0.5s;
+      &::before {
+        font-size: 60px;
+        color: $skyBlue;
+        position: relative;
+      }
+      &:hover {
+        background-color: $skyBlue;
+        &::before {
+          color: $white;
+        }
+      }
+  } // end .slick-next and .slick-prev
+
+  .slick-next {
+    right: $itemSpace*3;
+    &::before {
+      content: '>';
+      bottom: 8px;
+      left: 3px;
+    }
+  }
+
+  .slick-prev {
+    left: $itemSpace*3;
+    &::before {
+      bottom: 8px;
+      right: 3px;
+      content: '<';
+    }
+  }
+
+} // end media query

@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+  list-style: none;
+  font-weight: normal;
+  font-size: 1em;
+  color: $black;
+} // end *
+
+body {
+  background-color: $white;
+} // end body
+
+.container {
+  height: auto;
+  width: 95%;
+  margin: 0 auto;
+} // end container
+
+.title-1 {
+  font-size: 2em;
+}
+
+.title-2 {
+  font-size: 1.5em;
+}
+
+.title-3 {
+  font-size: 1em;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.noBorder {
+  border: none !important;
+}
+
+
+@media all and (min-width: $lg) {
+  .container {
+    width: 90%;
+  } // end container
+} // end media query

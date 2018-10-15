@@ -1,0 +1,324 @@
+/* cut point */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-weight: normal;
+  font-size: 1em;
+  color: #000;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  height: auto;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.title-1 {
+  font-size: 2em;
+}
+
+.title-2 {
+  font-size: 1.5em;
+}
+
+.title-3 {
+  font-size: 1em;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.noBorder {
+  border: none !important;
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+.mainMenu {
+  display: block;
+  background-color: #000;
+  min-height: 60px;
+}
+.mainMenu .container .leftMenu, .mainMenu .container .rightMenu {
+  display: inline-block;
+  line-height: 60px;
+}
+.mainMenu .container .leftMenu a, .mainMenu .container .rightMenu a {
+  display: inline-block;
+}
+.mainMenu .container .leftMenu a h1, .mainMenu .container .rightMenu a h1 {
+  color: #fff;
+}
+.mainMenu .container .leftMenu a i, .mainMenu .container .leftMenu a strong, .mainMenu .container .rightMenu a i, .mainMenu .container .rightMenu a strong {
+  display: inline-block;
+  color: #4d4d4d;
+}
+.mainMenu .container .leftMenu {
+  float: left;
+}
+.mainMenu .container .rightMenu {
+  float: right;
+  width: auto;
+}
+.mainMenu .container .rightMenu a strong {
+  display: none;
+}
+.mainMenu .container .rightMenu a .fa-facebook-f {
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 3px solid #4d4d4d;
+}
+
+@media all and (min-width: 1200px) {
+  .mainMenu .container .rightMenu a strong {
+    display: inline-block;
+  }
+}
+.regular {
+  position: relative;
+  bottom: 2px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 45px;
+}
+.regular .photo {
+  display: block;
+  width: 100%;
+  min-height: 330px;
+  background-image: url("../../img/coverPhone.png");
+  background-size: cover;
+}
+.regular .photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-next, .slick-prev {
+  display: none !important;
+}
+
+@media all and (min-width: 1200px) {
+  .regular .photo {
+    min-height: 500px;
+    background-image: url("../../img/coverDesktop.png");
+  }
+
+  .slick-next, .slick-prev {
+    width: auto;
+    height: auto;
+    display: inline-block !important;
+    z-index: 10;
+    top: 40%;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 100%;
+    transition: 0.5s;
+  }
+  .slick-next::before, .slick-prev::before {
+    font-size: 60px;
+    color: #38a9e8;
+    position: relative;
+  }
+  .slick-next:hover, .slick-prev:hover {
+    background-color: #38a9e8;
+  }
+  .slick-next:hover::before, .slick-prev:hover::before {
+    color: #fff;
+  }
+
+  .slick-next {
+    right: 45px;
+  }
+  .slick-next::before {
+    content: ">";
+    bottom: 8px;
+    left: 3px;
+  }
+
+  .slick-prev {
+    left: 45px;
+  }
+  .slick-prev::before {
+    bottom: 8px;
+    right: 3px;
+    content: "<";
+  }
+}
+.article {
+  margin-bottom: 45px;
+}
+.article .container h2 {
+  width: 95%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+.article .container .containerArticle {
+  width: 95%;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 2px -1px #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-radius: 4%;
+}
+.article .container .containerArticle .image {
+  width: 100%;
+  height: 230px;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+  background-color: #b3b3b3;
+}
+.article .container .containerArticle .info {
+  width: calc(100% - 30px);
+  margin: 0px auto;
+}
+.article .container .containerArticle .info h3 {
+  margin: 15px 0;
+}
+.article .container .containerArticle .info p {
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+
+@media all and (min-width: 1200px) {
+  .article {
+    position: relative;
+    bottom: 80px;
+  }
+  .article .container h2 {
+    width: auto;
+    text-align: left;
+  }
+  .article .container .containerArticle {
+    display: inline-block;
+    width: 21%;
+    margin-right: 30px;
+  }
+  .article .container .moveBottom {
+    position: relative;
+    top: 30px;
+  }
+}
+.form {
+  margin-bottom: 45px;
+}
+.form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.form .container form .row, .form .container form .rowComplete, .form .container form .rowMiddle {
+  width: 95%;
+  height: 50px;
+  margin: 0px auto;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  margin-bottom: 15px;
+}
+.form .container form .row input, .form .container form .row select, .form .container form .row option, .form .container form .row label, .form .container form .rowComplete input, .form .container form .rowComplete select, .form .container form .rowComplete option, .form .container form .rowComplete label, .form .container form .rowMiddle input, .form .container form .rowMiddle select, .form .container form .rowMiddle option, .form .container form .rowMiddle label {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+  color: #4d4d4d;
+}
+.form .container form .row input::placeholder, .form .container form .row select::placeholder, .form .container form .row option::placeholder, .form .container form .row label::placeholder, .form .container form .rowComplete input::placeholder, .form .container form .rowComplete select::placeholder, .form .container form .rowComplete option::placeholder, .form .container form .rowComplete label::placeholder, .form .container form .rowMiddle input::placeholder, .form .container form .rowMiddle select::placeholder, .form .container form .rowMiddle option::placeholder, .form .container form .rowMiddle label::placeholder {
+  color: #4d4d4d;
+}
+.form .container form .rowMiddle {
+  width: 70%;
+}
+.form .container form .rowMiddle button {
+  width: 100%;
+  height: 100%;
+  background-color: #38a9e8;
+  letter-spacing: 5px;
+  border: none;
+  color: #fff;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox .opacity-name {
+  display: inline-block;
+}
+.checkbox input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox .fas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: 0.5s;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+.checkbox .fas:before {
+  position: relative;
+  left: 4px;
+  bottom: 2px;
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.5;
+}
+.checkbox input:checked ~ .fas {
+  background-color: #fff;
+}
+.checkbox input:checked ~ .fas:before {
+  color: #000;
+  opacity: 1;
+}
+
+@media all and (min-width: 1200px) {
+  .form .container form {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .form .container form .row {
+    width: 48%;
+    display: inline-block;
+  }
+  .form .container form .row .checkbox {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .form .container form .moveRight {
+    margin-right: 3%;
+  }
+  .form .container form .rowComplete {
+    width: 100%;
+  }
+  .form .container form .rowMiddle {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

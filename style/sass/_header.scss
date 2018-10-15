@@ -1,0 +1,57 @@
+.mainMenu {
+  display: block;
+  background-color: $black;
+  min-height: 60px;
+  .container {
+    .leftMenu, .rightMenu {
+      display: inline-block;
+      line-height: 60px;
+      a {
+        display: inline-block;
+        h1 {
+          color: $white;
+        }
+        i, strong {
+          display: inline-block;
+          color: $grey-2;
+        }
+      } //end </a>
+    } // end .leftMenu, .rightMenu
+
+    .leftMenu {
+      float: left;
+    } // end .leftMenu
+
+    .rightMenu {
+      float: right;
+      width: auto;
+      a {
+        strong {
+          display: none;
+        }
+        .fa-facebook-f {
+          padding: $itemSpace/3 $itemSpace/3*2;
+          border-radius: 50%;
+          border: 3px solid $grey-2;
+        }
+      } // end </a>
+    } // end .rightMenu
+
+  } // end .container
+} // end </header>
+
+@media all and (min-width: $lg) {
+
+.mainMenu {
+  .container {
+    .rightMenu {
+      a {
+        strong {
+          display: inline-block;
+        }
+      }
+    } // end .rightMenu
+  }// end .container
+ } // end header
+
+} // end media query
